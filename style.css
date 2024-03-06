@@ -131,6 +131,16 @@ height:0px;
   }
 
 
+  .two-column {
+    display:flex;
+    flex-flow:row;
+    gap:15px;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+
+  }
+
 .mainn_nav {
 
     background-image: url("Background/Header\ Image.svg");
@@ -138,3 +148,4 @@ height:0px;
     background-repeat: no-repeat;
     height: 800px;
 }
+
