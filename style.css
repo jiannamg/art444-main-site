@@ -23,6 +23,10 @@ body {
     vertical-align: baseline;
 }
 
+p {
+    line-height: 150%;
+}
+
 
 h2 {
     font-family: "lulo-one", sans-serif;
@@ -68,7 +72,12 @@ section:nth-child(even) {
     margin: 0 auto;
 }
 
-
+.about-container {
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+    margin: 0 auto;
+}
 
 
 .nav_button a {
@@ -147,5 +156,27 @@ height:0px;
     background-color: #fff;
     background-repeat: no-repeat;
     height: 800px;
+    max-width: 1511px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow:row;
+    gap:30px;
+    justify-content: center;
+
+}
+
+.about-me-column{
+    
+    max-width: 610px;
+
+}
+
+.persona-box{
+
+    max-width: 234;
+
+
 }
 
