@@ -58,7 +58,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 
 .container {
@@ -130,8 +130,10 @@ height:0px;
 
   }
 
-.main_nav {
 
-    height: 400px;
+.mainn_nav {
+
+    background-image: url("Background/Header\ Image.svg");
+    background-color: #fff;
+    background-repeat: no-repeat;
 }
-
