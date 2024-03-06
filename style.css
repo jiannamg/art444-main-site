@@ -1,13 +1,60 @@
 /* CSS GOES HERE */
 
+header {
+
+position: absolute;
+width: 1511px;
+height: 622px;
+left: 0px;
+top: 320px;
+
+background-image: url("Background/Happy Lemon Header.svg");
+
+
+}
+
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     vertical-align: baseline;
 }
+
+
+h2 {
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: #F52602;
+}
+
+
+h3 {
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+h4 {
+font-family: "lulo-one", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+color: #417BF6;
+
+}
+
+
 section {
     padding: 60px 40px;
 }
@@ -23,16 +70,67 @@ section:nth-child(even) {
     margin: 0 auto;
 }
 
-nav ul {
+
+
+
+.nav_button a {
     list-style: none;
     display: flex;
     flex-flow: row;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    font-family: "lulo-one", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
 }
+
 
 footer {
     background-color: #000;
     color: #fff;
     padding: 10px;
 }
+
+
+.four-column {
+    display:flex;
+    flex-flow:row;
+    width:100%;
+    justify-content:center;
+
+  }
+  
+.skill {
+    content: "";
+    display: table;
+    clear: both;
+    width:200px;
+    height:80px;
+    margin: 14px;
+  }
+
+.blue-dash-divider {
+
+border: 6px dashed #417BF6;
+width: 239px;
+height:0px;
+}
+
+
+.three-column {
+    display:flex;
+    flex-flow:row;
+    gap:15px;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+
+  }
+
+
+

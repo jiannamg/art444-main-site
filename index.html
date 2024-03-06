@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>JiJi | Design for the Internet 2</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zzi1hwj.css">
 </head>
 <body>
 
@@ -19,12 +20,24 @@
   <div class="main_nav">
     <nav>
       <ul>
-        <li><a class="smoothscroll" href="#header">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About</a></li>
-        <li><a class="smoothscroll" href="#skills">Skills</a></li>
-        <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-        <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        <div class="nav_button">
+          <li><a href="#header">Home</a></li>
+        </div>
+        <div class="nav_button">
+          <li><a href="#about">About</a>
+        </div></li>
+        <div class="nav_button">
+        <a href="#skills">Skills</a>
+        </div>
+        <div class="nav_button">    
+        <a href="#gallery">Gallery</a>
+        </div>
+        <div class="nav_button">
+        <a href="#faqs">FAQs</a>
+        </div>
+        <div class="nav_button">
+        <a href="#contact">Contact</a>
+        </div>
       </ul>
     </nav>
   </div>
@@ -32,7 +45,7 @@
 
 <!-- Main Header --> 
   <section id="header" class="header">
-    <h1>All about me! All about JiJi!</h1>
+    <div><img width="100%" height="100%" src="Background/Happy Lemon Header.svg" class="image" alt="Happy Lemon Header"/></div>
   </section>
   
 <!-- About Section --> 
@@ -51,9 +64,11 @@
   <div class="container">
 
     <div class="header">
-      <div class="blue-dash-divider"></div>
-      <h2>Skills</h2>
-      <div class="blue-dash-divider"></div>
+      <div class="three-column">
+        <div class="blue-dash-divider"></div>
+        <h2>Skills</h2>
+        <div class="blue-dash-divider"></div>
+      </div>    
 
       <div>
       <h3>Some things I’ve learned over the years!</h3>
@@ -80,7 +95,7 @@
       </div>
     
       <div class="skill">
-        <div><img width="100" height="100%" src="Skills Icons/Icon_Figma.png" class="image" alt="Figma"/></div>
+        <div class="box"><img width="100" height="100%" src="Skills Icons/Icon_Figma.png" class="image" alt="Figma"/></div>
       <span class="label">Figma</span>
       </div>
 
@@ -147,7 +162,11 @@
   <div class="container">
 
     <div class="header">
-    <h2>Frequent Asked Questions</h2>
+      <div class="three-column">
+        <div class="blue-dash-divider"></div>
+        <h2>FAQ</h2>
+        <div class="blue-dash-divider"></div>
+      </div>
     <h3>Have a question? I may have the answer!</h3>
     <p>A little bit of everything! Questions to know more about me or questions I hear daily at every family get together.</p>
     </div>
