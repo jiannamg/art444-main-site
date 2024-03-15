@@ -1,5 +1,24 @@
 /* CSS GOES HERE */
 
+.mobile-menu {
+    width:40px;
+    height:40px;
+    background: #F7F4BA;
+    position:fixed;
+    top:40px;
+    bottom:40px;
+    left:40px;
+    background-image:url(interact/hamburger\ icon.svg);
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    border-radius:50%;
+    background-size:22px;
+    z-index:999;
+    display:none;
+}
+
+
+
 header {
 
 width: auto;
@@ -15,7 +34,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 14px;
     font-family: "poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -71,9 +90,6 @@ section {
     padding: 60px 40px;
 }
 
-section:nth-child(even) {
-    background-color: #fff;
-}
 
 .container {
     width: 100%;
@@ -147,12 +163,11 @@ height:0px;
     width:100%;
     justify-content:center;
     align-items:center;
-
+    height:40px;
   }
 
 
   .two-column {
-    display:flex;
     flex-flow:row;
     gap:15px;
     width:100%;
@@ -200,16 +215,15 @@ height:0px;
 
     background-image: url(Background/Footer.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
     max-width: 100%;
-    height: auto;
+    height: 430px;
 }
 
 .gallery{
 
-    height:1445px;
     width:auto;
-    background-image: url(Background/Gallery\ BG.svg);
-    background-repeat: no-repeat;
+    background-color: #F7F4BA;
 
 }
 
@@ -236,15 +250,11 @@ footer{
     display:none;
 }
 
-.hamburger-icon{
-
-display:none;
-
-}
 
 .gallery-description{
 
 justify-content: left;
+width:450px;
 
 }
 
@@ -260,7 +270,6 @@ margin-right:40px;
 }
 
 .gallery-summary{
-    width:450px;
     text-align:left;
     margin-left:40px;
     margin-right:40px;
@@ -271,16 +280,57 @@ display:flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
+background:white;
+border-radius:30px;
+overflow:hidden;
 
 }
 
 .gallery-frame{
-
-    background-image: url(interact/gallery-focus.svg);
-    background-repeat: no-repeat;
-    width: 1150px;
-    height:auto;
     padding:15px;
-    margin:15px;
+    background:white;
+    border-radius: 30px;
+    margin-bottom:25px;
 
+}
+
+.gallery-top{
+
+    background-image: url(Background/Gallery\ Top\ BG.svg);
+    background-repeat: no-repeat;
+    background-size:110%;
+}
+
+.gallery-bottom{
+
+    background-image: url(Background/Gallery\ Bottom\ BG.svg);
+    height:42px;
+    background-repeat:no-repeat;
+    background-size:100%
+
+
+}
+
+.nav-image{
+
+    width:160px;
+    height:160px;
+    padding:10px;
+
+}
+
+.gallery-image{
+
+    width:160px;
+    height:160px;
+    object-fit: cover;
+    border-radius:5px;
+}
+
+.gallery-focus-image{
+
+    height:475px;
+    width:475px;
+    object-fit:cover;
+    border-radius: 15px;
 }

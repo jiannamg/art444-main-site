@@ -1,6 +1,22 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
 
+    .navigation {
+        gap:15px;
+    
+    }
+
+    .nav_button a {
+        font-size: 14px;
+    
+    }
+    
+    .gallery-box{
+
+        display:none;
+    }
+
+
 }
 
 /* MOBILE VIEW */
@@ -16,28 +32,17 @@
         display:block;
     }
 
-
-    .hamburger-icon{
-
-        display:block;
-        
-        }
-
-    .mainn_nav {
-
+    
+    .navigation {
         display:none;
-            
         }
-        
-        .navigation {
-            padding: 30px;
-            display: flex;
-            flex-flow:row;
-            gap:30px;
-            justify-content: center;
-            background-color: #F7F4BA;
-        
-        
+
+     .mobile-menu {
+        display:block;
         }
+
+
+
+
 
 }
