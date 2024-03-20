@@ -1,6 +1,8 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
 
+
+
     .navigation {
         gap:15px;
     
@@ -42,7 +44,21 @@
         }
 
 
+     .mobile-menu-popout {
 
+            display:block;
+        }
+
+    .mainn_nav {
+        height: 60vh;
+        
+    }
+    
+    .nav_button a {
+
+        justify-content: left;
+    
+    }
 
 
 }

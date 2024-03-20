@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/zzi1hwj.css">
   <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="script.js">
 </head>
 <body>
 
@@ -46,6 +47,34 @@
     </nav>
   </div>
 </header>
+
+
+
+<div class="mobile-menu-popout">
+
+  <div class="mobile-navigation">  
+    <div class="nav_button">
+      <a href="#header">Home</a>
+    </div>
+    <div class="nav_button">
+      <a href="#about">About</a>
+    </div>
+    <div class="nav_button">
+    <a href="#skills">Skills</a>
+    </div>
+    <div class="nav_button">    
+    <a href="#gallery">Gallery</a>
+    </div>
+    <div class="nav_button">
+    <a href="#faqs">FAQs</a>
+    </div>
+    <div class="nav_button">
+    <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+
+</div>
   
 <!-- About Section --> 
 <section id="about">
@@ -176,22 +205,29 @@
             
           </div>
         </div>
-    <div class="gallery-navbar">
 
-        <div class="nav-image"><img src="images/Peach Ring iphone mockup.png" class="gallery-image" alt="Peach Ring"/></div>
 
-        <div class="nav-image"><img src="images/Up2You Sign.png" class="gallery-image" alt="Up2You"/></div>
-  
-        <div class="nav-image"><img src="images/SDSU Pride Guard Mockup.png" class="gallery-image" alt="SDSU Guard"/></div>
+      <div class="three-column">
+        <div class><img src="interact/left arrow.png" class="arrow-icon"/></div>
+          <div class="gallery-navbar">
 
-        <div class="nav-image"><img src="images/Queens delight Clean Cover-18.png" class="gallery-image" alt="Queens Delight"/></div>
+              <div class="nav-image"><img src="images/Peach Ring iphone mockup.png" class="gallery-image" alt="Peach Ring"/></div>
 
-        <div class="nav-image"><img src="images/Project 1 Book.png" class="gallery-image" alt="Type 1 Project "/></div>
+              <div class="nav-image"><img src="images/Up2You Sign.png" class="gallery-image" alt="Up2You"/></div>
+        
+              <div class="nav-image"><img src="images/SDSU Pride Guard Mockup.png" class="gallery-image" alt="SDSU Guard"/></div>
 
-        <div class="nav-image"><img src="images/Project 2.png" class="gallery-image" alt="Type 1 Project 2"/></div>
+              <div class="nav-image"><img src="images/Queens delight Clean Cover-18.png" class="gallery-image" alt="Queens Delight"/></div>
 
-        <div class="nav-image"><img src="images/t shirt ATLP-04.png" class="gallery-image" alt="ATLP"/></div>
-    </div>
+              <div class="nav-image"><img src="images/Project 1 Book.png" class="gallery-image" alt="Type 1 Project "/></div>
+
+              <div class="nav-image"><img src="images/Project 2.png" class="gallery-image" alt="Type 1 Project 2"/></div>
+
+              <div class="nav-image"><img src="images/t shirt ATLP-04.png" class="gallery-image" alt="ATLP"/></div>
+          </div>
+        <div class><img src="interact/right arrow.png" class="arrow-icon"/></div>
+
+      </div>
 
   </div>
 </section>
@@ -208,15 +244,64 @@
 <section id="faqs">
   <div class="container">
 
+    <button class="question-button" onclick="displayText()">When will you be graduating from SDSU?</button>
+
+    <div id="textField" style="display: none;">
+      This is the text that appears when you click the button.
+    </div>
+
     <div class="header">
       <div class="three-column">
         <div class="blue-dash-divider"></div>
         <h2>FAQ</h2>
         <div class="blue-dash-divider"></div>
       </div>
+
+
+
+
+
     <h3>Have a question? I may have the answer!</h3>
     <p>A little bit of everything! Questions to know more about me or questions I hear daily at every family get together.</p>
     </div>
+
+    <div class="persona-answer">
+
+      <div class="text"></div>
+      <script>
+        const div =document.querySelector(".text")
+        const text = "I'm expecting to graduate after this semester for class of Spring 2024. I'm really excited, I feel like I've made great strides this year and experiencing alot of great design skills!"
+      
+        function textTypingEffect(element, text, i=0) {
+          element.textContent+=text[i];
+
+          if (i===text.length - 1){
+            return;
+          }
+
+          setTimeout(()=>textTypingEffect(element, text, i+1), 50);
+        }
+      
+        textTypingEffect(div, text);
+      
+      
+      </script>
+
+  <button onclick="newQuote()">Click me</button>
+
+  <p id="demo"></p>
+
+   
+
+
+
+
+
+    </div>
+
+
+
+
 
     <div class="two-column">
       <h4>When will you be graduating from SDSU?</h4>
