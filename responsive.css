@@ -60,5 +60,64 @@
     
     }
 
+    .two-column-mobile {
+        display:block;
+    
+      }
+
+      h2 {
+        font-size: 36px;
+        line-height: 120%;
+        margin:0px;
+    }
+
+    #about{
+
+        margin-top:165px;
+        
+    }
+
+    .persona-box{
+
+        max-width: 234px;
+    
+    
+    }
+
+
+    h3 {
+        line-height:140%;
+        font-size: 20px;
+        color: #000000;
+    }
+
+
+
+    #skills{
+
+        display:none;
+    }
+
+
+    #mobile-skills{
+
+        display:flex;
+    }
+
+    #mobile-about {
+
+        display:block;
+    }
+    #about {
+
+        display:none;
+    }
+    #mobile{
+
+        display:none;
+    }
+
+
 
 }
+
