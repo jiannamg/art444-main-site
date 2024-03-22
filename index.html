@@ -10,8 +10,7 @@
 </head>
 <body>
 
-  <div class="mobile-menu"></div>
-
+  <div onclick="myMenu()" class="mobile-menu" id="menuButton"></div>
 
 
 <!-- Main Navigation --> 
@@ -36,7 +35,7 @@
                   <a href="#faqs">FAQs</a>
                   </div>
                   <div class="nav_button">
-                  <a href="#contact">Contact</a>
+                  <a href="#contact-top">Contact</a>
                   </div>
                 </div>
 
@@ -50,7 +49,7 @@
 
 
 
-<div class="mobile-menu-popout">
+<div id="mymenu" class="mobile-menu-popout">
 
   <div class="mobile-navigation">  
     <div class="nav_button">
@@ -186,7 +185,7 @@
 
 <!-- Skills Section -->  
 
-<section id="mobile">
+<section id="skills">
   <div class="container">
 
     <div class="header">
@@ -261,24 +260,21 @@
 
 
 <!-- Gallery Section -->  
-<section id="gallery-section" class="gallery">
+<section id="gallery" class="gallery">
   <div class="container">
 
     <div class="header">
     <h2>Gallery</h2>
     <h3>My Designs In Action</h3>
-    <p>A gallery of mockups, images, and illustrations of my work!</p>
+    <p>A gallery of mockups, images, and illuastrations of my work!</p>
     </div>
     <div class="two-column">
         <div class="gallery-frame">
           <div class="gallery-box">
-
               <div>
                 <img src="images/Sojuice Mockup.png" class="gallery-focus-image" alt="SoJuice"/>
               </div>
-
               <div class="gallery-description">
-                
                 <div class="gallery-box">
                   <h5>Project:</h5><span>SoJuice</span>
                 </div>
@@ -291,11 +287,65 @@
                 <div class="gallery-summary">
                   <p>Designing and creating an alcoholic beverage from scratch. Sojuice was a packaging design project aimed to appeal to young adults to drink fruity soju cocktails leisurely.</p>
                 </div>
-          
               </div>
-
             </div>  
-            
+          </div>
+        </div>
+
+        <div class="three-column">
+          <div class><img src="interact/left arrow.png" class="arrow-icon"/></div>
+            <div class="gallery-navbar">
+  
+                <div class="nav-image"><img src="images/Peach Ring iphone mockup.png" class="gallery-image" alt="Peach Ring"/></div>
+  
+                <div class="nav-image"><img src="images/Up2You Sign.png" class="gallery-image" alt="Up2You"/></div>
+          
+                <div class="nav-image"><img src="images/SDSU Pride Guard Mockup.png" class="gallery-image" alt="SDSU Guard"/></div>
+  
+                <div class="nav-image"><img src="images/Queens delight Clean Cover-18.png" class="gallery-image" alt="Queens Delight"/></div>
+  
+                <div class="nav-image"><img src="images/Project 1 Book.png" class="gallery-image" alt="Type 1 Project "/></div>
+  
+                <div class="nav-image"><img src="images/Project 2.png" class="gallery-image" alt="Type 1 Project 2"/></div>
+  
+                <div class="nav-image"><img src="images/t shirt ATLP-04.png" class="gallery-image" alt="ATLP"/></div>
+            </div>
+          <div class><img src="interact/right arrow.png" class="arrow-icon"/></div>
+  
+        </div>
+
+  </div>
+</section>
+
+<!-- Gallery Section Tablet -->  
+<section id=gallery-tablet-display class="gallery-center">
+  <div class="container">
+
+          <div class="header">
+          <h2>Gallery</h2>
+          <h3>My Designs In Action</h3>
+          <p>A gallery of mockups, images, and illuastrations of my work!</p>
+          </div>
+          <div class="gallery-frame-tablet">
+            <div class="gallery-box-tablet">
+                <div>
+                  <img src="images/Sojuice Mockup.png" class="gallery-focus-image" alt="SoJuice"/>
+                </div>
+                  <div class="gallery-tablet-description">
+                    <div class="gallery-box-tablet">
+                      <h5>Project:</h5><span>SoJuice</span>
+                    </div>
+                    <div class="gallery-box-tablet">
+                      <h5>Subject:</h5><span>Branding & Packaging</span>
+                    </div>
+                    <div class="gallery-box-tablet">
+                      <h5>Duration:</h5><span>1.5 Months</span>
+                    </div>
+                  </div>
+              <div class="gallery-summary-tablet">
+                    <p>Designing and creating an alcoholic beverage from scratch. Sojuice was a packaging design project aimed to appeal to young adults to drink fruity soju cocktails leisurely.</p>
+              </div>
+            </div>  
           </div>
         </div>
 
@@ -443,6 +493,23 @@
           <h2>Wanna Get in Contact?</h2>
           <h3>Send me an email saying hi!</h3>
           <p>For any inquiries on services, questions, and more!</p>
+          <div class="two-columns-vertical">
+            <label for="exampleRecipientInput">Full Name</label>
+            <input class="u-full-width" type="text">
+          </div>
+          <div class="two-columns-vertical">
+            <label for="exampleEmailInput">Enter your Email</label>
+            <input class="u-full-width" type="email">
+          </div>
+          <div class="two-columns-vertical">
+            <label for="exampleEmailInput">Enter your Phone Number</label>
+            <input class="u-full-width" type="email">
+          </div>
+          <div class="two-columns-vertical">
+            <label for="exampleMessage">Type Your Inquiry Here</label>
+            <textarea class="u-full-width"></textarea>
+          </div>
+          <input class="button-primary" type="submit" value="Submit">
         </div>
 
 
@@ -455,36 +522,27 @@
 
 <!-- Contact Section -->  
 <section id="contact">
-  <div class="container">
-    <form>
-      <div class="six columns">
-        <label for="exampleRecipientInput">FullName</label>
-        <input class="u-full-width" type="text">
-      </div>
-      <div class="six columns">
-        <label for="exampleEmailInput">Enter your Email</label>
-        <input class="u-full-width" type="email">
-      </div>
-    
-      <div class="six columns">
-        <label for="exampleEmailInput">Enter your Phone Number</label>
-        <input class="u-full-width" type="email">
-      </div>
 
-      <div>
-        <label for="exampleMessage">Type Your Inquiry Here</label>
-        <textarea class="u-full-width"></textarea>
-      </div>
-      <input class="button-primary" type="submit" value="Submit">
-    </form>
-  </div>
 </section>
 
 <!-- Footer Section -->  
-
+<footer>
 <section id="footer" class="footer">
 
 </footer>
+
+<script>
+
+  function myMenu(){
+
+    document.getElementById('mymenu').classList.toggle('open');
+    document.getElementById('menuButton').classList.toggle('close');
+
+
+  }
+
+</script>
+
 
 <script src="script.js"></script>
 </body>

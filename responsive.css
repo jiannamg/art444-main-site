@@ -18,6 +18,16 @@
         display:none;
     }
 
+    #gallery-tablet-display{
+        display:flex;
+        background-color: #F7F4BA;
+    }
+
+    #gallery{
+
+        display:none;
+    }
+
 
 }
 
