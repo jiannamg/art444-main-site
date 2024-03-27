@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/zzi1hwj.css">
   <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="script.js">
 </head>
 <body>
 
@@ -48,27 +47,26 @@
 </header>
 
 
-
 <div id="mymenu" class="mobile-menu-popout">
 
   <div class="mobile-navigation">  
     <div class="nav_button">
-      <a href="#header">Home</a>
+      <a onclick="mini_nav_button()"href="#main_nav">Home</a>
     </div>
     <div class="nav_button">
-      <a href="#about">About</a>
+      <a onclick="mini_nav_button()"href="#mobile_about">About</a>
     </div>
     <div class="nav_button">
-    <a href="#skills">Skills</a>
+    <a onclick="mini_nav_button()"href="#mobile-skills">Skills</a>
     </div>
     <div class="nav_button">    
-    <a href="#gallery">Gallery</a>
+    <a onclick="mini_nav_button()"href="#gallery-mobile-display">Gallery</a>
     </div>
     <div class="nav_button">
-    <a href="#faqs">FAQs</a>
+    <a onclick="mini_nav_button()"href="#faqs">FAQs</a>
     </div>
     <div class="nav_button">
-    <a href="#contact">Contact</a>
+    <a onclick="mini_nav_button()"href="#contact">Contact</a>
     </div>
   </div>
 
@@ -92,7 +90,7 @@
 </section>
 
 <!-- Mobile About Section --> 
-<section id="mobile-about">
+<section id="mobile_about">
   <div class="about-container">
     <div class="two-column-mobile">
       <div class="about-me-column">
@@ -598,6 +596,13 @@
     document.getElementById('menuButton').classList.toggle('close');
 
 
+  }
+
+
+  function mini_nav_button(){
+
+    document.getElementById('mymenu').classList.remove('open');
+    document.getElementById('menuButton').classList.remove('close');
   }
 
 </script>
