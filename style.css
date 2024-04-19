@@ -224,9 +224,12 @@ section {
 }
 
 
-#footer {
+.footer {
     background-color:#F7F4BA;
     padding-bottom: 0;
+}
+.footer-dark {
+    background-color:#1E273D;
 }
 
 
@@ -286,7 +289,6 @@ height:0px;
 
 .mainn_nav {
 
-    background-color: #fff;
     background-repeat: no-repeat;
     height: 70vh;
     width:100%;
@@ -309,7 +311,11 @@ height:0px;
 
 }
 
-.header-background-dark
+.header-background-dark{
+
+    background-image: url(Background/Header\ Dark.svg);
+
+}
 
 .mainn_nav-dark {
 
@@ -329,6 +335,13 @@ height:0px;
 
 
 }
+
+.navigation-dark{
+
+    background-color: #1E273D;
+
+}
+
 
 .about-me-column{
     
@@ -357,10 +370,24 @@ height:0px;
 
 }
 
+.footer-dark {
+
+    background-image: url(Background/Footer\ Dark.svg);
+
+}
+
 .gallery{
 
     width:auto;
     background-color: #F7F4BA;
+
+}
+
+
+.gallery-dark{
+
+    background-color: #272F4E;
+
 
 }
 
@@ -458,9 +485,32 @@ overflow:hidden;
     height:190px
 }
 
+.gallery-top-dark{
+
+    background-image: url(Background/Gallery\ Top\ BG\ Dark.svg);
+
+}
+
 .gallery-bottom{
 
     background-image: url(Background/Gallery\ Bottom\ BG.svg);
+    height:42px;
+    background-repeat:no-repeat;
+    background-size:100%
+
+
+}
+
+.gallery-bottom-dark{
+
+    background-image: url(Background/Gallery\ Bottom\ BG\ Dark.svg);
+
+}
+
+
+.gallery-bottom-dark{
+
+    background-image: url(Background/Gallery\ Bottom\ BG\ Dark.svg);
     height:42px;
     background-repeat:no-repeat;
     background-size:100%
@@ -541,6 +591,12 @@ overflow:hidden;
 
 }
 
+.persona-answer-dark {
+    background-color: #3D4360;
+
+
+}
+
 
 #mobile-skills {
 
@@ -553,7 +609,7 @@ overflow:hidden;
 
 }
 
-#contact-top{
+.contact-top{
 
     background-image: url(Background/Contact\ BG\ 2.svg);
     background-repeat:no-repeat;
@@ -562,11 +618,22 @@ overflow:hidden;
     background-position-y:bottom;
 
 }
+.contact-top-dark{
 
-#contact {
+    background-image: url(Background/Contact\ BG\ Dark.svg);
+
+}
+
+.contact {
 
     background-color: #F7F4BA;
     height: 600px;
+}
+
+.contact-dark{
+
+    background-color: #1E273D;
+
 }
 
 .contact-title {

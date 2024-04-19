@@ -39,10 +39,19 @@ function displayText() {
 
 
     document.getElementById('modebutton').classList.toggle('lightmode');
+    document.getElementsByClassName('contact-top')[0].classList.toggle('contact-top-dark');
+    document.getElementsByClassName('gallery-top')[0].classList.toggle('gallery-top-dark');
+    document.getElementsByClassName('gallery')[0].classList.toggle('gallery-dark');
+    document.getElementsByClassName('footer')[0].classList.toggle('footer-dark');
+    document.getElementsByClassName('persona-answer')[0].classList.toggle('persona-answer-dark');
+    document.getElementsByClassName('gallery-bottom')[0].classList.toggle('gallery-bottom-dark');
     document.getElementsByTagName('body')[0].classList.toggle('body-dark');
     document.getElementsByClassName('gallery-frame')[0].classList.toggle('gallery-frame-dark');
-    document.getElementsByClassName('.gallery-navbar')[0].classList.toggle('.gallery-navbar-dark');
-
+    document.getElementsByClassName('gallery-navbar')[0].classList.toggle('gallery-navbar-dark');
+    document.getElementsByClassName('contact')[0].classList.toggle('contact-dark');
+    document.getElementsByClassName('mainn_nav')[0].classList.toggle('mainn_nav-dark');
+    document.getElementsByClassName('header-background')[0].classList.toggle('header-background-dark');
+    document.getElementsByClassName('navigation')[0].classList.toggle('navigation-dark');
   }
 
   function myMenu() {
