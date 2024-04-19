@@ -5,7 +5,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.lightdarkmode{
+    width:40px;
+    height:40px;
+    background: #F7F4BA;
+    position:fixed;
+    top:80px;
+    left:40px;
+    background-image:url(interact/Dark\ Mode.svg);
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    border-radius:50%;
+    background-size:22px;
+    z-index:999;
 
+}
 
 .mobile-menu {
     width:40px;
@@ -61,7 +75,14 @@ left: 0px;
 top: 320px;
 
 
+
 }
+header-dark{
+
+    background-color: #15202B;
+
+}
+
 
 
 body {
@@ -73,6 +94,13 @@ body {
     font-weight: 400;
     font-style: normal;
     vertical-align: baseline;
+
+}
+
+.body-dark{
+
+    color: #989898;
+    background-color: #15202B;
 }
 
 p {
@@ -89,7 +117,9 @@ h2 {
     line-height: 125%;
     margin:0px;
 }
-
+.h2-dark {
+    color: white;
+}
 
 h3 {
     font-family: "lulo-one", sans-serif;
@@ -99,6 +129,12 @@ h3 {
     color: #000000;
     margin-top:20px;
     margin-bottom:0px;
+}
+
+.h3-dark{
+
+    color:#989898;
+
 }
 
 h4 {
@@ -112,6 +148,14 @@ color: #417BF6;
 
 }
 
+
+.h4-dark {
+
+    color: white;
+
+
+}
+
 h5 {
     font-family: "lulo-one", sans-serif;
     font-weight: 700;
@@ -122,6 +166,13 @@ h5 {
     margin-right:10px;
     
     }
+
+.h5-dark {
+
+    color:white;
+}
+
+
 
 
 section {
@@ -162,7 +213,13 @@ section {
     text-align: center;
     text-decoration: none;
     color: #000000;
-  
+
+}
+
+.nav_button-dark{
+
+    color:white !important;
+
 
 }
 
@@ -198,6 +255,13 @@ height:0px;
 }
 
 
+.divider-dark{
+
+    border: 6px dashed #F7F4BA !important; 
+
+}
+
+
 .three-column {
     display:flex;
     flex-flow:row;
@@ -229,6 +293,27 @@ height:0px;
     max-height:800px;
     background-size: cover;
     margin-bottom:100px;
+    
+}
+
+
+.header-background{
+
+    background-image: url(Background/Header\ Image.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+
+}
+
+.header-background-dark
+
+.mainn_nav-dark {
+
+    background-color: #15202B;
     
 }
 
@@ -292,6 +377,7 @@ height:0px;
 
     display: block;
     margin-top:-110px;
+    
 }
 
 .mobile-header{
@@ -335,6 +421,14 @@ overflow:hidden;
 
 }
 
+
+.gallery-navbar-dark{
+
+    color:#3D4360;
+
+
+}
+
 .gallery-frame{
     padding:15px;
     background:white;
@@ -345,6 +439,15 @@ overflow:hidden;
     align-content: center;
 
 }
+
+.gallery-frame-dark{
+
+    background:#3D4360;
+
+}
+
+
+
 
 .gallery-top{
 
@@ -613,5 +716,10 @@ margin-right:60px
     align-items:center;
     display:flex;
     margin-top:285px;
+
+}
+.lightmode{
+
+background-image: url(interact/Light\ Mode.svg);
 
 }

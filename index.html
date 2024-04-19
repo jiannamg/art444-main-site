@@ -10,6 +10,7 @@
 <body>
 
   <div onclick="myMenu()" class="mobile-menu" id="menuButton"></div>
+  <div onclick="darkmode()"class="lightdarkmode" id="modebutton"></div>
 
 
 <!-- Main Navigation --> 
@@ -38,7 +39,7 @@
                   </div>
                 </div>
 
-                <img width="100%" height="auto" src="Background/Header Image.svg" class="tablet-header">
+                <div class="tablet-header header-background">
 
                 <img width="100%" height="auto" src="Background/Mobile Header.svg" class="mobile-header">
 
@@ -588,24 +589,6 @@
 
 </footer>
 
-<script>
-
-  function myMenu(){
-
-    document.getElementById('mymenu').classList.toggle('open');
-    document.getElementById('menuButton').classList.toggle('close');
-
-
-  }
-
-
-  function mini_nav_button(){
-
-    document.getElementById('mymenu').classList.remove('open');
-    document.getElementById('menuButton').classList.remove('close');
-  }
-
-</script>
 
 
 <script src="script.js"></script>
