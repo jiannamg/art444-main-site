@@ -655,6 +655,12 @@ overflow:hidden;
     width: 100%;
     margin-top:3px;
 }
+.u-full-width-dark {
+
+    border-color: #3D4360;
+    background-color:#3D4360 ;
+}
+
 
 .two-columns-vertical {
 
@@ -679,6 +685,14 @@ overflow:hidden;
     background-color: white;
     color:#417BF6
 }
+
+.button-primary-dark {
+
+    border-color: #F7AF19;
+    background-color: #1E273D;
+    color: #F7AF19;
+}
+
 
 #exampleMessage{
 
@@ -756,6 +770,11 @@ margin-right:60px
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+}
+.gallery-frame-tablet-dark{
+
+    background:#3D4360;
 
 }
 

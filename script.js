@@ -36,6 +36,11 @@ function displayText() {
       dividerdark[i].classList.toggle('divider-dark');
     }
 
+    const contactbar=document.querySelectorAll('.u-full-width')
+    for (let i = 0; i < contactbar.length; i++) {
+      contactbar[i].classList.toggle('u-full-width-dark');
+    }
+
 
 
     document.getElementById('modebutton').classList.toggle('lightmode');
@@ -52,15 +57,22 @@ function displayText() {
     document.getElementsByClassName('mainn_nav')[0].classList.toggle('mainn_nav-dark');
     document.getElementsByClassName('header-background')[0].classList.toggle('header-background-dark');
     document.getElementsByClassName('navigation')[0].classList.toggle('navigation-dark');
+    document.getElementsByClassName('button-primary')[0].classList.toggle('button-primary-dark');
+    document.getElementsByClassName('gallery-frame-tablet')[0].classList.toggle('gallery-frame-tablet-dark');
+    document.getElementsByClassName('gallery-frame-tablet')[1].classList.toggle('gallery-frame-tablet-dark');
+    document.getElementsByClassName('gallery-center')[0].classList.toggle('gallery-center-dark');
+    document.getElementsByClassName('gallery-center')[1].classList.toggle('gallery-center-dark');
+    document.getElementsByClassName('header-background')[1].classList.toggle('header-background-dark');
   }
 
+
   function myMenu() {
-    document.getElementById('myMenu').classList.toggle('open');
-    document.getElementById('menuButton').classList.toggle('close');
+    document.getElementById('mymenu').classList.toggle('open');
+    document.getElementById('menubutton').classList.toggle('close');
   }
 
 
   function mini_nav_button() {
-    document.getElementById('myMenu').classList.remove('open');
-    document.getElementById('menuButton').classList.remove('close');
+    document.getElementById('mymenu').classList.remove('open');
+    document.getElementById('menubutton').classList.remove('close');
   }
