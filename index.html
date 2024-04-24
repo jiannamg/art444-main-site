@@ -468,8 +468,9 @@
 
     <div class="persona-answer">
 
-      <div class="text"></div>
-      <script>
+      <p id=faq-question class="faq-answer">Here's the answer!</p>
+
+      <!-- <script>
         const div =document.querySelector(".text")
         const text = "I'm expecting to graduate after this semester for class of Spring 2024. I'm really excited, I feel like I've made great strides this year and experiencing alot of great design skills!"
       
@@ -486,13 +487,28 @@
         textTypingEffect(div, text);
       
       
-      </script>
+      </script> -->
 
-  <button onclick="newQuote()">Click me</button>
 
-  <p id="demo"></p>
 
-   
+
+
+
+
+
+  <script>
+
+    const faqToggle = document.querySelectorAll('.faq-toggle')
+
+    for (let i = 0; i < faqToggle.length; i++) {
+      faqToggle[i].addEventListener("click", function() { this.classList.toggle} )
+
+    }
+
+
+  </script>
+
+
 
 
 
@@ -505,35 +521,51 @@
 
 
     <div class="two-column">
-      <h4>When will you be graduating from SDSU?</h4>
-      <p>I'm expecting to graduate after this semester for class of Spring 2024. But, I've discovered something confusing in my degree audit and now I'm crying and scared.</p>
-      
-      <h4>What do you have planned for after graduation?</h4>
-      <p>I plan to work at the my old restaurant job as a hostess to save money while developing my portfolio. To save up money, while looking for worthwhile job openings I'd actually want to pursue. Rather than applying for everything right away. Take my time with it!</p>
+
+      <div class="faq-button">
+      <p id="faq-question" class="question" onclick="answer1()">When will you be graduating from SDSU?</p>
+      </div>
+
+      <div class="faq-button">
+      <p id="faq-question" class="question" onclick="answer2()">What do you have planned for after graduation?</p>
+      </div>
+
     </div>
     
     <div class="two-column">
-      <h4>What was your favorite class you took at SDSU?</h4>
-      <p>My favorite class had to be Graphic Design IV. It was the smallest class turnout I ever had with only 6 students including myself. But the work and interaction with a small enviornment was super fun. I also discovered that I wanted to pursue cafe and restauran branding!</p>
-      
-      <h4>What work are you most proud producing at SDSU?</h4>
-      <p>Probably my cafe rebrand guidelines for a cafe in convoy! The space and brand has so much potential and I had a lot of fun designing it!</p>
+
+      <div class="faq-button">
+        <p id="faq-question" class="question" onclick="answer3()">What was your favorite class you took at SDSU?</p>
+      </div>
+
+      <div class="faq-button">
+        <p id="faq-question" class="question" onclick="answer4()">What work are you most proud producing at SDSU?</p>
+      </div>
+
     </div>  
 
     <div class="two-column">
-      <h4>What are your favorite colors?</h4>
-      <p>I love the color yellow! I think I'm a pretty upbeat and sunshiny type of demeanor so I love having the color yellow around to brighten the environment I'm in! I don't like wearing the color yellow though, it doesn't compliment me very well.</p>
+
+      <div class="faq-button">
+        <p id="faq-question" class="question" onclick="answer5()">What are your favorite colors?</p>
+      </div>
+
+      <div class="faq-button">
+        <p id="faq-question" class="question" onclick="answer6()">What’s on your bucket list?</p>
+      </div>
   
-      <h4>What’s on your bucket list?</h4>
-      <p>I know for sure I want to travel. It's intimidating thinking of where to though. I've been to Japan, but I want to go back already. That'd far as where I am so far.</p>
     </div>  
 
     <div class="two-column">  
-      <h4>What are you currently into?</h4>
-      <p>Currentlyyyyy, I'm into my school projects since I'm able to invest alot of time into them. But, outside of work I really like the Persona game series and Genshin Impact!</p>
 
-      <h4>How do you feel about blah blah blah?</h4>
-      <p>Blah Blah Blah Blah Blah Blah Blah</p>
+      <div class="faq-button">
+        <p id="faq-question" class="question" onclick="answer7()">What are you currently into?</p>
+      </div>
+
+      <div class="faq-button">
+        <p id="faq-question" class="question" onclick="answer8()">How do you feel about blah blah blah?</p>
+      </div>
+
     </div>
 
   </div>
@@ -594,3 +626,52 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+<script>
+  function answer1() {
+    document.getElementById("faq-question").innerHTML = "I'll be graduating on May 11th, 2024 for the Spring Semester!";
+  }
+  </script>
+
+<script>
+  function answer2() {
+    document.getElementById("faq-question").innerHTML = "I plan to work at the my old restaurant job as a hostess to save money while developing my portfolio. To save up money, while looking for worthwhile job openings I'd actually want to pursue. Rather than applying for everything right away. Take my time with it!";
+  }
+  </script>
+
+<script>
+  function answer3() {
+    document.getElementById("faq-question").innerHTML = "My favorite class had to be Graphic Design IV. It was the smallest class turnout I ever had with only 6 students including myself. But the work and interaction with a small enviornment was super fun. I also discovered that I wanted to pursue cafe and restauran branding!";
+  }
+  </script>
+
+<script>
+  function answer4() {
+    document.getElementById("faq-question").innerHTML = "Probably my cafe rebrand guidelines for a cafe in convoy! The space and brand has so much potential and I had a lot of fun designing it!";
+  }
+  </script>
+
+<script>
+  function answer5() {
+    document.getElementById("faq-question").innerHTML = "I love the color yellow! I think I'm a pretty upbeat and sunshiny type of demeanor so I love having the color yellow around to brighten the environment I'm in! I don't like wearing the color yellow though, it doesn't compliment me very well.";
+  }
+  </script>
+
+<script>
+  function answer6() {
+    document.getElementById("faq-question").innerHTML = "I know for sure I want to travel. It's intimidating thinking of where to though. I've been to Japan, but I want to go back already. That'd far as where I am so far.";
+  }
+  </script>
+
+<script>
+  function answer7() {
+    document.getElementById("faq-question").innerHTML = "Currentlyyyyy, I'm into my school projects since I'm able to invest alot of time into them. But, outside of work I really like the Persona game series and Genshin Impact!";
+  }
+  </script>
+
+<script>
+  function answer8() {
+    document.getElementById("faq-question").innerHTML = "Blah Blah Blah Blah Blah Blah Blah";
+  }
+  </script>
+

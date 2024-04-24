@@ -76,3 +76,5 @@ function displayText() {
     document.getElementById('mymenu').classList.remove('open');
     document.getElementById('menubutton').classList.remove('close');
   }
+
+  
