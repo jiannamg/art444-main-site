@@ -835,8 +835,6 @@ background-image: url(interact/Light\ Mode.svg);
     width: 100%;
     height: 60px;
     
-
-
 }
 
 .faq-answer{
@@ -854,6 +852,19 @@ background-image: url(interact/Light\ Mode.svg);
 
 
 }
+
+.tablet-faq{
+
+    display:block;
+}
+
+.mobile-faq{
+
+    display:none;
+    align-content: center;
+
+}
+
 
 .faq-button:hover {
 

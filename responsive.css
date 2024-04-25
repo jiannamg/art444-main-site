@@ -7,6 +7,19 @@
 
     }
 
+    .faq-button{
+
+        height: 80px;
+        
+    }
+
+    .faq-button:hover {
+
+        height:80px;
+    
+    }
+    
+
 
     .navigation {
         gap:15px;
@@ -91,11 +104,41 @@
     
     }
     
+    .about-container{
 
+        margin-top:200px;
+    }
 }
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {
+
+    .faq-button{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    .faq-button:hover{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    .mobile-faq{
+
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+    
+    }
+
+    .tablet-faq{
+
+        display:none;
+    }
 
     .header-background{
 
@@ -160,6 +203,7 @@
         margin:0px;
     }
 
+
     #about{
 
         margin-top:165px;
@@ -173,6 +217,11 @@
     
     }
 
+    .persona-answer {
+
+        height:auto;    
+    
+    }
 
     h3 {
         line-height:140%;
