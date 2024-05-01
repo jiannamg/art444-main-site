@@ -41,6 +41,22 @@ function displayText() {
       contactbar[i].classList.toggle('u-full-width-dark');
     }
 
+    const faqbuttondark=document.querySelectorAll('.faq-button')
+    for (let i = 0; i < faqbuttondark.length; i++) {
+      faqbuttondark[i].classList.toggle('faq-button-dark');
+    }
+
+    const faqbuttondarkhover=document.querySelectorAll('.faq-button:hover')
+    for (let i = 0; i < faqbuttondarkhover.length; i++) {
+      faqbuttondarkhover[i].classList.toggle('.faq-button-dark:hover');
+    }
+
+
+
+    
+
+
+
 
 
     document.getElementById('modebutton').classList.toggle('lightmode');
@@ -63,6 +79,7 @@ function displayText() {
     document.getElementsByClassName('gallery-center')[0].classList.toggle('gallery-center-dark');
     document.getElementsByClassName('gallery-center')[1].classList.toggle('gallery-center-dark');
     document.getElementsByClassName('header-background')[1].classList.toggle('header-background-dark');
+
   }
 
 
@@ -77,4 +94,47 @@ function displayText() {
     document.getElementById('menubutton').classList.remove('close');
   }
 
+
+
+
   
+  
+  var quotes = [
+    'I will be graduating on May 11th, 2024 for the Spring Semester!'
+  
+  ]
+  
+  
+  function firstanswer() {
+    //set the typing text
+    txt = quotes[0];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+   var i = 0;
+    var txt = ''; //the typing text
+    var speed = 50;
+
+    function typeWriter() {
+
+      //clear the html initially for a text
+      if (i === 0)
+        document.getElementById("faq-question").innerHTML = '';
+
+      if (i < txt.length) {
+
+        document.getElementById("faq-question").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+
+  
+
+  
+
+

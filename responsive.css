@@ -10,12 +10,18 @@
     .faq-button{
 
         height: 80px;
+        padding-left:0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
         
     }
 
     .faq-button:hover {
 
         height:80px;
+        padding-left:0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
     
     }
     
