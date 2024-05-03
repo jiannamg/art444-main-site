@@ -10,8 +10,8 @@ html {
     height:40px;
     background: #F7F4BA;
     position:fixed;
-    top:80px;
-    left:40px;
+    top:40px;
+    right:40px;
     background-image:url(interact/Dark\ Mode.svg);
     background-repeat:no-repeat;
     background-position: 50% 50%;
@@ -448,6 +448,7 @@ align-items: center;
 justify-content: center;
 background:white;
 border-radius:30px;
+padding:20px;
 overflow:hidden;
 
 }
@@ -468,6 +469,8 @@ overflow:hidden;
     display:flex;
     justify-content: center;
     align-content: center;
+    height:600px;
+    width:1000px;
 
 }
 
@@ -573,7 +576,7 @@ overflow:hidden;
 .persona-answer {
 
     background-color: #F7F4BA;
-    height:80px;
+    height:200px;
     width:60%;
     border-radius: 20px;
     line-height: 140%;
@@ -941,7 +944,141 @@ background-image: url(interact/Light\ Mode.svg);
     padding-right: 15px;
     padding-bottom: 10px;
 
+}
+
+.gallery-image-thumbnail{
+
+    width:60px;
+    height:60px;
+    background-image: url(images/Sojuice\ Mockup.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+
 
 }
 
 
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container-second {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .labelwhite {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+  }
+
+  .labelblack {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: "lulo-one", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+  }
+
+
+
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .gallery-focustwo{
+
+    width:100%;
+    height:450px;
+
+
+  }
+
+
+.faq-section{
+
+    display:block;
+
+}
+  
