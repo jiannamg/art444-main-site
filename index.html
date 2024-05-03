@@ -445,7 +445,6 @@
 <section id="faqs">
   <div class="container">
 
-    <button class="question-button" onclick="displayText()">When will you be graduating from SDSU?</button>
 
     <div id="textField" style="display: none;">
       This is the text that appears when you click the button.
@@ -459,9 +458,6 @@
       </div>
 
 
-
-
-
     <h3>Have a question? I may have the answer!</h3>
     <p>A little bit of everything! Questions to know more about me or questions I hear daily at every family get together.</p>
     </div>
@@ -469,31 +465,6 @@
     <div class="persona-answer">
 
       <p id=faq-question class="faq-answer">Here's the answer!</p>
-
-      <!-- <script>
-        const div =document.querySelector(".text")
-        const text = "I'm expecting to graduate after this semester for class of Spring 2024. I'm really excited, I feel like I've made great strides this year and experiencing alot of great design skills!"
-      
-        function textTypingEffect(element, text, i=0) {
-          element.textContent+=text[i];
-
-          if (i===text.length - 1){
-            return;
-          }
-
-          setTimeout(()=>textTypingEffect(element, text, i+1), 50);
-        }
-      
-        textTypingEffect(div, text);
-      
-      
-      </script> -->
-
-
-
-
-
-
 
 
   <script>
@@ -524,45 +495,31 @@
 
         <button class="faq-button" onclick="firstanswer()">When will you be graduating from SDSU?</button>
 
-        <div class="faq-button">
-        <p id="faq-question" class="question" onclick="secondanswer()">What do you have planned for after graduation?</p>
-        </div>
+        <button class="faq-button" onclick="secondanswer()">What do you have planned for after graduation?</p></button>
 
       </div>
       
       <div class="two-column">
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer3()">What was your favorite class you took at SDSU?</p>
-        </div>
+        <button class="faq-button" onclick="thirdanswer()">What was your favorite class you took at SDSU?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer4()">What work are you most proud producing at SDSU?</p>
-        </div>
+        <button class="faq-button" onclick="fourthanswer()">What work are you most proud producing at SDSU?</p></button>
 
       </div>  
 
       <div class="two-column">
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer5()">What are your favorite colors?</p>
-        </div>
+        <button class="faq-button" onclick="fifthanswer()">What are your favorite colors?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer6()">What’s on your bucket list?</p>
-        </div>
-    
+        <button class="faq-button" onclick="sixthanswer()">What’s on your bucket list?</p></button>
+
       </div>  
 
       <div class="two-column">  
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer7()">What are you currently into?</p>
-        </div>
+        <button class="faq-button" onclick="seventhanswer()">What are you currently into?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer8()">How do you feel about blah blah blah?</p>
-        </div>
+        <button class="faq-button" onclick="eigthanswer()">How do you feel about blah blah blah?</p></button>
 
       </div>
     </div>
@@ -570,38 +527,22 @@
 
     <div class="mobile-faq">
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer1()">When will you be graduating from SDSU?</p>
-        </div>
+      <button class="faq-button" onclick="firstanswer()">When will you be graduating from SDSU?</button>
 
-        <div class="faq-button">
-         <p id="faq-question" class="question" onclick="answer2()">What do you have planned for after graduation?</p>
-        </div>
+      <button class="faq-button" onclick="secondanswer()">What do you have planned for after graduation?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer3()">What was your favorite class you took at SDSU?</p>
-        </div>
+      <button class="faq-button" onclick="thirdanswer()">What was your favorite class you took at SDSU?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer4()">What work are you most proud producing at SDSU?</p>
-        </div>
+      <button class="faq-button" onclick="fourthanswer()">What work are you most proud producing at SDSU?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer5()">What are your favorite colors?</p>
-        </div>
+      <button class="faq-button" onclick="fifthanswer()">What are your favorite colors?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer6()">What’s on your bucket list?</p>
-        </div>
+      <button class="faq-button" onclick="sixthanswer()">What’s on your bucket list?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer7()">What are you currently into?</p>
-        </div>
+      <button class="faq-button" onclick="seventhanswer()">What are you currently into?</p></button>
 
-        <div class="faq-button">
-          <p id="faq-question" class="question" onclick="answer8()">How do you feel about blah blah blah?</p>
-        </div>
-      
+      <button class="faq-button" onclick="eigthanswer()">How do you feel about blah blah blah?</p></button>
+
     </div>
 
   </div>
@@ -662,55 +603,16 @@
 
 <script src="script.js"></script>
 </body>
+
+
+
 </html>
 
 
 
-<!--<script>
-  function answer2() {
-    document.getElementById("faq-question").innerHTML = "I plan to work at the my old restaurant job as a hostess to save money while developing my portfolio. To save up money, while looking for worthwhile job openings I'd actually want to pursue. Rather than applying for everything right away. Take my time with it!";
-  }
-  </script>-->
 
-<script>
-  function answer3() {
-    document.getElementById("faq-question").innerHTML = "My favorite class had to be Graphic Design IV. It was the smallest class turnout I ever had with only 6 students including myself. But the work and interaction with a small enviornment was super fun. I also discovered that I wanted to pursue cafe and restauran branding!";
-  }
-  </script>
 
-<script>
-  function answer4() {
-    document.getElementById("faq-question").innerHTML = "Probably my cafe rebrand guidelines for a cafe in convoy! The space and brand has so much potential and I had a lot of fun designing it!";
-  }
-  </script>
 
-<script>
-  function answer5() {
-    document.getElementById("faq-question").innerHTML = "I love the color yellow! I think I'm a pretty upbeat and sunshiny type of demeanor so I love having the color yellow around to brighten the environment I'm in! I don't like wearing the color yellow though, it doesn't compliment me very well.";
-  }
-  </script>
-
-<script>
-  function answer6() {
-    document.getElementById("faq-question").innerHTML = "I know for sure I want to travel. It's intimidating thinking of where to though. I've been to Japan, but I want to go back already. That'd far as where I am so far.";
-  }
-  </script>
-
-<script>
-  function answer7() {
-    document.getElementById("faq-question").innerHTML = "Currentlyyyyy, I'm into my school projects since I'm able to invest alot of time into them. But, outside of work I really like the Persona game series and Genshin Impact!";
-  }
-  </script>
-
-<script>
-  function answer8() {
-    document.getElementById("faq-question").innerHTML = "Blah Blah Blah Blah Blah Blah Blah";
-  }
-  </script>
-
-<script>
-
-  </script>
 
 
 

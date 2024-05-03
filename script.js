@@ -100,7 +100,14 @@ function displayText() {
   
   
   var quotes = [
-    'I will be graduating on May 11th, 2024 for the Spring Semester!'
+    'I will be graduating on May 11th, 2024 for the Spring Semester!',
+    'I plan to work at the my old restaurant job as a hostess to save money while developing my portfolio. To save up money, while looking for worthwhile job openings I wouldd actually want to pursue. Rather than applying for everything right away. Take my time with it!',
+    'My favorite class had to be Graphic Design IV. It was the smallest class turnout I ever had with only 6 students including myself. But the work and interaction with a small enviornment was super fun. I also discovered that I wanted to pursue cafe and restauran branding!',
+    'Probably my cafe rebrand guidelines for a cafe in convoy! The space and brand has so much potential and I had a lot of fun designing it!',
+    'I love the color yellow! I think I am a pretty upbeat and sunshiny type of demeanor so I love having the color yellow around to brighten the environment I am in! I do not like wearing the color yellow though, it does not compliment me very well.',
+    'I know for sure I want to travel. It is intimidating thinking of where to though. I have been to Japan, but I want to go back already.',
+    'Currentlyyyyy, I am into my school projects since I am able to invest alot of time into them. But, outside of work I really like the Persona game series and Genshin Impact!',
+    'Blah Blah Blah Blah Blah Blah Blah',
   
   ]
   
@@ -108,6 +115,69 @@ function displayText() {
   function firstanswer() {
     //set the typing text
     txt = quotes[0];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function secondanswer() {
+    //set the typing text
+    txt = quotes[1];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function thirdanswer() {
+    //set the typing text
+    txt = quotes[2];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function fourthanswer() {
+    //set the typing text
+    txt = quotes[3];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function fifthanswer() {
+    //set the typing text
+    txt = quotes[4];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function sixthanswer() {
+    //set the typing text
+    txt = quotes[5];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function seventhanswer() {
+    //set the typing text
+    txt = quotes[6];
+    
+    //reset the index
+    i = 0;
+    typeWriter();
+  }
+
+  function eigthanswer() {
+    //set the typing text
+    txt = quotes[7];
     
     //reset the index
     i = 0;
@@ -133,8 +203,6 @@ function displayText() {
     }
 
 
-  
 
   
-
 
