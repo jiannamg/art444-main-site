@@ -54,7 +54,6 @@ html {
     padding-top:120px;
     padding-right:60px;
     height:100%;
-    width: 150px;
     padding-left:40px;
     transition:all 300ms;
     border-style: solid;
@@ -453,6 +452,25 @@ overflow:hidden;
 
 }
 
+.gallery-navbar-mobile{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background:white;
+    border-radius:30px;
+    padding:15px;
+    overflow:hidden;
+    margin-top:10px;
+    margin-bottom: 10px;
+    }
+
+.gallery-navbar-mobile-dark{
+
+    background:#3D4360;
+    
+}    
+
 
 .gallery-navbar-dark{
 
@@ -544,10 +562,9 @@ overflow:hidden;
 
 .gallery-focus-image{
 
-    height:475px;
-    width:475px;
-    object-fit:cover;
-    border-radius: 15px;
+    height:100%;
+    width:100%;
+
 }
 
 .arrow-icon{
@@ -1081,4 +1098,10 @@ background-image: url(interact/Light\ Mode.svg);
     display:block;
 
 }
+
+.gallery-mobile-stack{
+    display:none;
+
+}
+
   

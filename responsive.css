@@ -1,6 +1,17 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
 
+    .gallery-mobile-stack{
+        display:none;
+    
+    }
+
+    .gallery-frame{
+
+        height:500px;
+        width:100%;
+    
+    }
 
     .about-me-column{
         margin-top: 450px;
@@ -44,7 +55,7 @@
     
     .gallery-box{
 
-        display:none;
+        display:flex;
     }
 
     #gallery-tablet-display{
@@ -62,7 +73,7 @@
 
     #gallery{
 
-        display:none;
+        display:flex;
     }
 
     h2 {
@@ -124,6 +135,46 @@
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {
 
+    .gallery-mobile-stack{
+        display:block;
+        margin-top:40px;
+    
+    }
+
+    .column{
+
+        width:50px;
+
+
+    }
+
+    .gallery-navbar{
+
+        display:none;
+    }
+
+    .three-column{
+
+        margin-top: 30px;
+
+
+    }
+
+    .gallery-box {
+
+        margin-top:0px;
+        margin-bottom:0px;
+        margin-left:0px;
+        margin-right:0px;
+        }
+
+    .gallery-frame{
+
+        height:220px;
+        width:100%;
+    
+    }
+
     .faq-button{
 
         margin-top: 10px;
@@ -155,7 +206,7 @@
 
         background-image: url(Background/Mobile\ Header\ final.svg);
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         background-size: cover;
         background-position: center;
     

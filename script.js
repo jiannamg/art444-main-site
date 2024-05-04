@@ -48,7 +48,12 @@ function displayText() {
 
     const faqbuttondarkhover=document.querySelectorAll('.faq-button:hover')
     for (let i = 0; i < faqbuttondarkhover.length; i++) {
-      faqbuttondarkhover[i].classList.toggle('.faq-button-dark:hover');
+      faqbuttondarkhover[i].classList.toggle('faq-button-dark:hover');
+    }
+
+    const gallerynavframe=document.querySelectorAll('.gallery-navbar-mobile')
+    for (let i = 0; i < gallerynavframe.length; i++) {
+      gallerynavframe[i].classList.toggle('gallery-navbar-mobile-dark');
     }
 
 
